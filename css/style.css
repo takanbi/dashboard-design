@@ -40,7 +40,6 @@
 }
 
 .container #right-section header h3 {
-  background-color: red;
   background-size: 100%;
   background-image: -webkit-gradient(linear, left top, right top, from(#6a40cc), to(#df37be));
   background-image: linear-gradient(90deg, #6a40cc, #df37be);
