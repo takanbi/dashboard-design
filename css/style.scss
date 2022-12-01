@@ -1,91 +1,146 @@
 // font-family: 'Montserrat', sans-serif;
 // font-family: 'Roboto', sans-serif;
 * {
-    padding: 0;
-    margin: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  #left-section {
+    width: 20%;
+    background-color: rgb(34, 35, 51);
+    height: 100%;
   }
-  .container {
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    #left-section {
-      width: 20%;
-      background-color: rgb(34, 35, 51);
-      height: 100%;
-    }
-    #right-section {
-      width: 80%;
-      background-color: rgb(26, 27, 43);
-      height: 100%;
-      header {
-        width: 100%;
+  #right-section {
+    width: 80%;
+    background-color: rgb(26, 27, 43);
+    height: 100%;
+    header {
+      width: 100%;
       //   background-color: red;
-        padding: 0 1em;
-        height: 50px;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
-        h3 {
-            background-color: red;
-            background-size: 100%;
-            background-image: -o-linear-gradient(left, rgb(106,64,204), rgb(223,55,190));
-            background-image: -webkit-gradient(linear, left top, right top, from(rgb(106,64,204)), to(rgb(223,55,190)));
-            background-image: linear-gradient(90deg, rgb(106,64,204), rgb(223,55,190));
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 700;
-            font-size: 2em;
-        }
-        span {
-          width: 2em;
-          height: 2em;
-          border-radius: 50%;
-          background-color: white;
-          margin: 0 0.5em;
-        }
-        input {
-          margin-left: auto;
+      padding: 0 1em;
+      height: 50px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      h3 {
+        background-color: red;
+        background-size: 100%;
+        background-image: -o-linear-gradient(
+          left,
+          rgb(106, 64, 204),
+          rgb(223, 55, 190)
+        );
+        background-image: -webkit-gradient(
+          linear,
+          left top, right top,
+          from(rgb(106, 64, 204)),
+          to(rgb(223, 55, 190))
+        );
+        background-image: linear-gradient(
+          90deg,
+          rgb(106, 64, 204),
+          rgb(223, 55, 190)
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 2em;
+      }
+      span {
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+        background-color: white;
+        margin: 0 0.5em;
+      }
+      // input[type="search"] {
+      //     backgro÷und: transparent;
+      //   margin-left: auto;
+      //   border: none;
+      //   background-color:rgb(38, 39, 57);//just added
+      //   height: 30px;//just added
+      //   width: 200px;//just added
+      //   padding: 0.5rem;
+      //   border-radius: 0.5rem;
+      //   background: rgb(38, 39, 57) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat left;
+    }
+    #search-field {
+      position: relative;
+      margin-left: auto;
+      height: 30px; //just added
+      width: 200px;
+      background-color: rgb(38, 39, 57);
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      .fa-search {
+        color: rgba(255, 255, 255, 0.5);
+      }
+      input[type="search"] {
+        background: transparent;
+        border: none;
+        position: absolute;
+        left: 2rem;
+        height: 100%;
+        outline-style: none;
+        // box-shadow: none;
+        // border-color: transparent;
+        cursor: pointer;
+      }
+    }
+    #main {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      height: calc(100% - 50px);
+      #graphs {
+        width: 75%;
+        height: 100%;
+        background-color: blue;
+        #box1,
+        #box2,
+        #box3 {
+          height: 30%;
+          background-color: blueviolet;
+          margin: 1em;
         }
       }
-      #main {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        width: 100%;
-        height: calc(100% - 50px);
-        #graphs {
-          width: 75%;
-          height: 100%;
-          background-color: blue;
-          #box1,
-          #box2,
-          #box3 {
-            height: 30%;
-            background-color: blueviolet;
-            margin: 1em;
-          }
-        }
-        #feedback {
-          width: 25%;
-          height: 100%;
-          background-color: green;
-        }
+      #feedback {
+        width: 25%;
+        height: 100%;
+        background-color: green;
       }
     }
   }
-  
+}
+
+//remember to run autoprefixer
+//https://www.geeksforgeeks.org/css-to-put-icon-inside-an-input-element-in-a-form/
+//https://nikitahl.com/search-icon-inside-input
