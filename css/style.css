@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container #left-section {
+  width: 20%;
+  background-color: #222333;
+  height: 100%;
+}
+
+.container #right-section {
+  width: 80%;
+  background-color: #1a1b2b;
+  height: 100%;
+}
+
+.container #right-section header {
+  width: 100%;
+  padding: 0 1em;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container #right-section header h3 {
+  background-color: red;
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#6a40cc), to(#df37be));
+  background-image: linear-gradient(90deg, #6a40cc, #df37be);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.container #right-section header span {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: white;
+  margin: 0 0.5em;
+}
+
+.container #right-section header input {
+  margin-left: auto;
+}
+
+.container #right-section #main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: calc(100% - 50px);
+}
+
+.container #right-section #main #graphs {
+  width: 75%;
+  height: 100%;
+  background-color: blue;
+}
+
+.container #right-section #main #graphs #box1,
+.container #right-section #main #graphs #box2,
+.container #right-section #main #graphs #box3 {
+  height: 30%;
+  background-color: blueviolet;
+  margin: 1em;
+}
+
+.container #right-section #main #feedback {
+  width: 25%;
+  height: 100%;
+  background-color: green;
+}
+/*# sourceMappingURL=style.css.map */
