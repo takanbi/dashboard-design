@@ -128,7 +128,25 @@
           grid-template-rows: 100%;
           grid-gap: 1rem;
           section {
-            background: red;
+            background: rgb(38, 39, 57);
+            border-radius: 1rem;
+            margin: 0.75rem 0.25rem;
+          }
+        }
+        #graphs-box2 {
+          width: 100%;
+          background: rgb(38, 39, 57);
+          border-radius: 1rem;
+          margin: 0.75rem 0.25rem;
+        }
+        #graphs-box3 {
+          // width: 100%;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 100%;
+          grid-gap: 1rem;
+          section {
+            background: rgb(38, 39, 57);
             border-radius: 1rem;
             margin: 0.75rem 0.25rem;
           }

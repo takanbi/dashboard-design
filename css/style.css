@@ -122,7 +122,30 @@
 }
 
 .container #right-section #main #graphs #graphs-box1 section {
-  background: red;
+  background: #262739;
+  border-radius: 1rem;
+  margin: 0.75rem 0.25rem;
+}
+
+.container #right-section #main #graphs #graphs-box2 {
+  width: 100%;
+  background: #262739;
+  border-radius: 1rem;
+  margin: 0.75rem 0.25rem;
+}
+
+.container #right-section #main #graphs #graphs-box3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+  grid-gap: 1rem;
+}
+
+.container #right-section #main #graphs #graphs-box3 section {
+  background: #262739;
   border-radius: 1rem;
   margin: 0.75rem 0.25rem;
 }
