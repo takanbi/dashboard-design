@@ -69,6 +69,22 @@
         border-radius: 50%;
         background-color: white;
         margin: 0 0.5em;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        img {
+          width: 1em;
+          height: 1em;
+        }          
       }
     }
     #search-field {
@@ -115,6 +131,7 @@
         height: 100%;
         // background-color: blue;
         padding: 1rem;
+        margin-top: -1rem;
         #graphs-box1,
         #graphs-box2,
         #graphs-box3 {
