@@ -141,6 +141,12 @@
   margin: 0.75rem 0.25rem;
 }
 
+.container #right-section #main #graphs #graphs-box1 section canvas {
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
 .container #right-section #main #graphs #graphs-box2 {
   width: 100%;
   background: #262739;
