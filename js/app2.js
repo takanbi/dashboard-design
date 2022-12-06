@@ -7,7 +7,7 @@ $(function () {
 });
 let main = document.getElementById("main");
 
-let myChart = echarts.init(main);
+let myChart = echarts.init(main, 'dark');
 let option;
 
 const gaugeData = [
