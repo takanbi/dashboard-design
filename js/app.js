@@ -2,8 +2,8 @@ $(function(){
 
   let main = document.getElementById("graphBox-sect1");
   // let main = $("#graphBox-sect1");
-  // let myChart = echarts.init(main, 'dark');
-  let myChart = echarts.init(main);
+  let myChart = echarts.init(main, 'dark');
+  // let myChart = echarts.init(main);
   let option;
   
   const gaugeData = [
